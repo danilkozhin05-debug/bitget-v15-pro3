@@ -1,0 +1,14 @@
+{
+  "version": "15.3.1",
+  "files": [
+    {
+      "path": "bot.py"
+    },
+    {
+      "path": "START_PAPER_COLOR.bat"
+    },
+    {
+      "path": "VERSION.txt"
+    }
+  ]
+}
