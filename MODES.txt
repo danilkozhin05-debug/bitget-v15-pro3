@@ -1,0 +1,7 @@
+V15 PRO MODES
+
+START_PAPER.bat = real market data, signals and virtual/paper trades. NO real orders.
+START_AUTO_REAL.bat = existing real-money launcher, if included in the original ZIP.
+The original files are preserved. Do not delete adaptive_stats.json, candle_stats.json, paper_trades.csv or signals.csv if you want to keep learning history.
+
+TP profile for default $57 deposit: TP1 50%, TP2 30%, TP3 20%.

@@ -1,0 +1,15 @@
+V15.3.2 — REAL ORDER / STOP-LOSS FIX
+
+The entry market order no longer sends presetStopLossPrice.
+
+Flow:
+1. Market entry is submitted.
+2. Bitget order status is confirmed as filled/partially_filled.
+3. Actual average fill price is read.
+4. Original signal risk percentage is applied to the actual fill.
+5. LONG/SHORT stop direction is validated against the latest price.
+6. Position-level SL is placed on Bitget via /api/v2/mix/order/place-pos-tpsl with market execution.
+7. Only after SL is accepted are TP1/TP2/TP3 exchange-side plans created.
+8. If SL is rejected, an emergency market close is attempted and TP creation is skipped.
+
+This specifically addresses the previous Bitget HTTP 400 error where a stale signal-time SL could be on the wrong side of the current price, especially for SHORT positions.
