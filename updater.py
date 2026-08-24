@@ -2,7 +2,7 @@ import json, hashlib, os, shutil, tempfile, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-REPO = "danilkozhin05-debug/bitget-v15-pro"
+REPO = "danilkozhin05-debug/bitget-v15-pro3"
 BRANCH = "main"
 MANIFEST_URL = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/updates/manifest.json"
 
